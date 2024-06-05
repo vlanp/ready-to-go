@@ -1,0 +1,81 @@
+// VARIABLE
+$normal-size: 2rem;
+$light-grey: #e5e5e5;
+$grey: #908f8f;
+$violet: #5c48d3;
+$orange: #d34848;
+
+// GENERAL
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+// HEADER
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  padding: 0 5rem;
+  gap: 3rem;
+  border-bottom: 1px solid $light-grey;
+}
+
+// MAIN
+
+main {
+  height: 90vh;
+  padding-top: 10vh;
+}
+
+.launch {
+  height: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  .pressed {
+    color: white;
+    background-color: $violet;
+  }
+  > p {
+    width: 25rem;
+    height: 15rem;
+    background-color: $orange;
+    font-size: 4.8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $grey;
+    border-radius: 6px;
+  }
+  button {
+    width: 10rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    color: $violet;
+    background-color: white;
+    border: 1px solid $grey;
+    border-radius: 6px;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    > div {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
